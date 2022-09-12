@@ -2,12 +2,13 @@
 
 /**
 * main - print the string in the put function
+*
 * Description: using the main function
-* this program prints "Programming is travelling the world in one go
+* this program prints "Programming is like building a multilingual puzzle
 * Return: 0
 */
 int main(void)
 {
-       puts ("\"Programming is travelling the world in one go");
+       puts ("\"Programming is like building a multilingual puzzle");
        return (0);
 }
