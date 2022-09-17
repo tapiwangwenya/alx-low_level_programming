@@ -8,25 +8,29 @@
  */
 int main(void)
 {
-	int m, n;
+	int r, i, j;
 
-	for (m = 0; m < 100; m++)
+	for (r = '0'; r <= '9'; r++)
 	{
-		for (n = m + 1; n < 100; n++)
+		for (i = '0'; i <= '9'; i++)
 		{
-			putchar(m / 10 + '0'); /*prints m first digit*/
-			putchar(m % 10 + '0'); /*prints m second digit*/
-			putchar(' ');
-			putchar(n / 10 + '0'); /*prints n first digit*/
-			putchar(n % 10 + '0'); /*prints n second digit*/
-			if (m == 98 && n == 99)
+			for (j = '0'; j <= '9'; j++)
 			{
-				break; /*break outta loop*/
+				if (j > i && i > r)
+				{
+					putchar(r);
+					putchar(i);
+					putchar(j);
+					if (r != '7' || i != '8' || j != '9')
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
 			}
-			putchar(','); /*prints comma*/
-			putchar(' '); /*prints a space*/
-		} /*exit for first loop*/
-	} /*exit for second loop*/
-	putchar('\n'); /*prints new line*/
+		}
+	}
+	putchar('\n');
 	return (0);
 }
+
