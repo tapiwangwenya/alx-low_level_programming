@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - prints alphabets 10 
- *
+ * print_alphabet_x10 - prints alphabets 10
  * author:tuneday
  * Return: nothing, just void
  */
