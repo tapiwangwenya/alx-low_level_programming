@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include "main.h"
 
-/**
- * _puts - puts a string 
- * @str: string to print 
+/*
+ * _puts - prints a string
+ * @str: string to print
  *
- * Description: prints a string 
+ * Description: prints a string
  * on success: returns no error
  */
 
