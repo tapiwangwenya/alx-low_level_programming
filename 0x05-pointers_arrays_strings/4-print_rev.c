@@ -5,7 +5,7 @@
 /**
  * print_rev - Prints a string in reverse order
  * @s: String to reverse
- * Return: Nothing 
+ * Return: Nothing
  */
 void print_rev(char *s)
 {
@@ -13,4 +13,5 @@ void print_rev(char *s)
 
 	while (len--)
 		putchar(*(s + len));
+	putchar(10);
 }
