@@ -1,1 +1,1 @@
-Pointers arrays strings
+11. Dont hate the hacker, hate the code
