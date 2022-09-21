@@ -3,7 +3,7 @@
 /**
  * print_alphabet - prints alphabets in lowercase
  *
- * author: tuneday
+ * author: tapiwangwenya
  * Return: nothing, just void
  */
 void print_alphabet(void)
