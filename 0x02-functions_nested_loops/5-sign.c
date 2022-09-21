@@ -3,7 +3,7 @@
 /**
  * print_sign - prints sign of a number based on zero level
  * @n: parameter whose sign is being checked for
- * author: tuneday
+ * author: tapiwangwenya
  * Return: returns 1 for n > 0, -1 for n < 0, 0 for n = 0
  */
 int print_sign(int n)
