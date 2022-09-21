@@ -4,7 +4,7 @@
  * _islower - checks if an entry is lowercase, if YES returns 1
  * otherwise returns 0
  * @c: is the parameter to be compared with ASCII value
- * author: tuneday
+ * author: tapiwangwenya
  * Return: if lowercase 1, otherwise 0
  */
 int _islower(int c)
