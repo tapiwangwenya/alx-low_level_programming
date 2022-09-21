@@ -2,7 +2,7 @@
 
 /**
  * print_alphabet_x10 - prints alphabets 10
- * author:tuneday
+ * author: tapiwangenya
  * Return: nothing, just void
  */
 void print_alphabet_x10(void)
