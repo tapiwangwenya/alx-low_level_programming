@@ -4,7 +4,7 @@
  * puts_half - prints half of a string
  *
  * @str: parameter
- * author: tuneday
+ * author: tapiwa ngwenya
  * Return: nothing
  */
 void puts_half(char *str)
