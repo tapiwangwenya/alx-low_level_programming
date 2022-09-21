@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * author: tuneday
+ * author: tapiwangwenya
  * Return: 0 if succesful
  */
 int main(void)
