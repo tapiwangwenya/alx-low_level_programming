@@ -4,7 +4,7 @@
  * _isalpha - returns 1 if entry is an lphabet, lowercase or uppercase
  * otherwise returns o
  * @c: is the parametter to be compared with ASCII value
- * author: tuneday
+ * author: tapiwangwenya
  * Return: if alphabet returns 1 ohterwise returns 0
  */
 int _isalpha(int c)
