@@ -2,26 +2,27 @@
 
 /**
  * *_strncat - concatenates two strings
- * @dest: copy to
- * @src: copy from
+ * @dest: copy parameter to
+ * @src: copy  parameter from
  * @n: number of characters to be copied
  * author: tapiwangwenya
  * Return: string
  */
 char *_strncat(char *dest, char *src, int n);
 {
-	int i = 0, j = 0;
+	int length = 0, i;
 
-	while (*(dest + i) != "\0")
-		i++;
-
-	while (*(src + j) != "\0" && j < n)
+	while (dest[length] != '\0')
 	{
-		*(dest + i) = *(src + j);
-		i++;
-		j++;
+		length++;
 	}
-	*(dest + i) = '\0';
-
+	i = 0;
+	while (i < n && src[i] != '\0')
+	{
+		dest[length] = src[i];
+		i++;
+		length++;
+	}
+	dest[length] = '\0';
 	return (dest);
 }
