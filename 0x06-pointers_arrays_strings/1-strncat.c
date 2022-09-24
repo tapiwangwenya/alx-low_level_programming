@@ -5,8 +5,6 @@
  * @dest: copy parameter to
  * @src: copy  parameter from
  * @n: number of characters to be copied
- * author: tapiwangwenya
- * Return: string
  */
 char *_strncat(char *dest, char *src, int n);
 {
