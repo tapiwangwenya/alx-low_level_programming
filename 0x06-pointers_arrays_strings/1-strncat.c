@@ -5,23 +5,25 @@
  * @dest: copy parameter to
  * @src: copy  parameter from
  * @n: number of characters to be copied
+ * Return: string
  */
 
 char *_strncat(char *dest, char *src, int n);
 {
-	int length = 0, i;
+	int i, j;
 
-	while (dest[length] != '\0')
-	{
-		length++;
-	}
-	i = 0;
-	while (i < n && src[i] != '\0')
-	{
-		dest[length] = src[i];
+	i = j = 0;
+	while (*(dest + i))
 		i++;
-		length++;
+	while (j < n && *(src + j))
+	{
+		*(dest + i) = *(src + j);
+		i++;
+		j++;
+
 	}
-	dest[length] = '\0';
-	return (dest);
+	if (j < n)
+		*(dest + i) = *(src + j);
+	return (dest)i;
+
 }
