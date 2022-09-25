@@ -6,6 +6,7 @@
  * @src: copy  parameter from
  * @n: number of characters to be copied
  */
+
 char *_strncat(char *dest, char *src, int n);
 {
 	int length = 0, i;
