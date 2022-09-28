@@ -10,12 +10,12 @@ int is_palindrome(char *s)
 {
 	int flag = 1;
 
-	checks(s, 0, strlen_recursion(s) - 1, &flag);
+	checks(s, 0, _strlen_recursion(s) - 1, &flag);
 	return (flag);
 }
 
 /**
- * checks - checks if a string is a palindrome
+ * check - checks if a string is a palindrome
  * @s: string to be checked
  * @start: start index
  * @end: end index
