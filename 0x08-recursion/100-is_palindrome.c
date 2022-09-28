@@ -41,7 +41,7 @@ void check(char *s, int start, int end, int *flag)
  *
  * Return: length of the string
  */
-int _strlen_recursion(chas *s)
+int _strlen_recursion(char *s)
 {
 	int sum = 0;
 
