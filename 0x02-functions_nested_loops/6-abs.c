@@ -1,28 +1,13 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * _abs - value absolute
- *
- * @n: The int to print
- * Return: Always 0.
+ * _isalpha - Check if character is an alphabetic character.
+ * @c: type int character
+ * Return: 1 if letter, lowercase or uppercase, and 0 otherwise
  */
-
-int _abs(int n)
+int _isalpha(int c)
 {
-	if (n < 0)
-	{
-		return (n * (-1));
-	}
-
-	else if (n == 0)
-	{
-		return (0);
-	}
-
+	if ((c > 64 && c < 91) || (c > 96 && c < 123))
+		return (1);
 	else
-	{
-		return (n);
-	}
-
+		return (0);
 }

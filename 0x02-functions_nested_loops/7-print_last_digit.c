@@ -27,5 +27,3 @@ int print_last_digit(int n)
 	}
 
 }
-Footer
-© 2022 GitHub, Inc.
