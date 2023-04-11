@@ -1,8 +1,10 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * puts_half - prints half of a string.
- * @str: param
+ * puts_half - This function prints half of a string followed by a new line.
+ * @str: pointer parameter
+ * Author: sammykingx
  */
 void puts_half(char *str)
 {
