@@ -1,29 +1,32 @@
 #include "main.h"
-
 /**
- * *_strncat - concatenates two strings
- * @dest: copy parameter to
- * @src: copy  parameter from
- * @n: number of characters to be copied
- * Return: string
+ *_strncat - concatenates two strings
+ *@dest: A pointer to a character that will be changed
+ *@src: A pointer to a character that will be changed
+ *@n: value
+ *Return: dest
  */
 
-char *_strncat(char *dest, char *src, int n);
+char *_strncat(char *dest, char *src, int n)
+
 {
-	int i, j;
+int i, j;
 
-	i = j = 0;
-	while (*(dest + i))
-		i++;
-	while (j < n && *(src + j))
-	{
-		*(dest + i) = *(src + j);
-		i++;
-		j++;
+i = 0;
+while (dest[i] != '\0')
+{
+i++;
+}
 
-	}
-	if (j < n)
-		*(dest + i) = *(src + j);
-	return (dest)i;
+j = 0;
+while (j < n && src[j] != '\0')
+{
+dest[i] = src[j];
+j++;
+i++;
+}
 
+dest[i] = '\0';
+
+return (dest);
 }

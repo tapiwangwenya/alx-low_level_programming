@@ -1,22 +1,31 @@
 #include "main.h"
-
 /**
- * _strcmp - compares two strings
- * @s1: first string parameter
- * @s2: second string parameter
- * Return: if s1 is greater than s2 return number greter than 0
- * but if s1 is less than s2 return number less than 0
- * but if strings are equal return 0
+ *_strncat - concatenates two strings
+ *@dest: A pointer to a character that will be changed
+ *@src: A pointer to a character that will be changed
+ *@n: value
+ *Return: dest
  */
-int _strcmp(char *s1, char *s2)
+
+char *_strncat(char *dest, char *src, int n)
+
 {
-	int i = 0, j;
+int i, j;
 
-	while (s1[i] == s2[i] && s1[i] != '\0')
-	{
-		i++;
-	}
-	j = s1[i] - s2[i];
-
-	return (j);
+i = 0;
+while (dest[i] != '\0')
+{
+i++;
 }
+
+j = 0;
+while (j < n && src[j] != '\0')
+{
+dest[i] = src[j];
+j++;
+i++;
+}
+
+dest[i] = '\0';
+
+return (dest);
