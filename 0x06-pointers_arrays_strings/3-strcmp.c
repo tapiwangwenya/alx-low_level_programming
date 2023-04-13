@@ -1,31 +1,24 @@
 #include "main.h"
 /**
- *_strncat - concatenates two strings
- *@dest: A pointer to a character that will be changed
- *@src: A pointer to a character that will be changed
- *@n: value
+ *_strcmp - compares two strings
+ *@s1: A pointer to a character that will be changed
+ *@s2: A pointer to a character that will also be changed/modified/updated
  *Return: dest
  */
 
-char *_strncat(char *dest, char *src, int n)
+int _strcmp(char *s1, char *s2)
 
 {
-int i, j;
 
-i = 0;
-while (dest[i] != '\0')
+char *str_one = s1;
+char *str_two = s2;
+
+
+while (*str_one != '\0' && *str_two != '\0' && *str_one == *str_two)
 {
-i++;
+str_one++;
+str_two++;
 }
 
-j = 0;
-while (j < n && src[j] != '\0')
-{
-dest[i] = src[j];
-j++;
-i++;
+return (*str_one - *str_two);
 }
-
-dest[i] = '\0';
-
-return (dest);
