@@ -1,44 +1,35 @@
 #include "main.h"
-
 /**
- * _strspn - Locates a character in a string
- * @s: This is the main C string to be scanned.
- * accept: This is the string containing the list of characters to match in s
- * Return: return count
- */
+* _strspn - return length of string that matches values consistently
+* @s: string to search
+* @accept: target matches
+* Return: number of bytes consecutively matched
+*/
 
 unsigned int _strspn(char *s, char *accept)
-
 {
-	int i, j;
-	int count = 0;
-	char *str1, *str2;
+	int i = 0, j;
+	int matches = 0;
 
-	str1 = s;
-	str2 = accept;
-
-	i = 0;
-	while (str1[i] != '\0') /*Declaring WHILE *s */
+	while (s[i] != '\0') /*iterate through string*/
 	{
-		j = 0;
-		while (str2[j] != '\0') /*Declaring WHILE *accept*/
+
+		for (j = 0; accept[j] != '\0'; j++) /*iterate through target*/
 		{
-			if (str2[j] == str1[i]) /*Evaluate condition*/
+			if (s[i] == accept[j]) /*record & break at first match*/
 			{
-				 count++; /*count number*/
-				 break;
+				matches++;
+				break;
 			}
 
-			j++; /*add j+1*/
+			if (accept[j + 1] == '\0' && s[i] != accept[j])
+
+			return (matches);/*return if idx doesn't match*/
 		}
 
-		if (s[i] != accept[j]) /*If aren't equals*/
-		{
-			break;
-		}
-
-		i++; /*add x+1*/
+		i++;
 	}
 
-	return (count); /*return the value of count*/
+	return (matches); /* return num if all match till end */
+
 }
